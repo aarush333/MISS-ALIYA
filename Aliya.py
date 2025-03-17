@@ -20,31 +20,31 @@ def typing_effect(text, delay=0.002, color=Fore.WHITE):
 def display_animated_logo():
     clear_screen()
     logo_lines = [
-         ("_______   _________   _______    _______      _______    _         _________              _______", Fore.YELLOW),
-        ("(       )  \\__   _/  (  ____ \\  (  ____ \\    (  ___  )  ( \\        \\_   __/  |\\     /|  (  ___  )", Fore.YELLOW),
-        ("| () () |     ) (     | (    \\/  | (    \\/    | (   ) |  | (           ) (     ( \\   / )  | (   ) |", Fore.GREEN),
-        ("| || || |     | |     | (_____   | (_____     | () |  | |           | |      \\ () /   | (_) |", Fore.CYAN),
-        ("| |()| |     | |     (____  )  (_____  )    |  ___  |  | |           | |       \\   /    |  ___  |", Fore.CYAN),
-        ("| |   | |     | |           ) |        ) |    | (   ) |  | |           | |        ) (     | (   ) |", Fore.GREEN),
-        ("| )   ( |  __) (__  /\\) |  /\\) |    | )   ( |  | (/\\  __) (__     | |     | )   ( |", Fore.YELLOW),
-        ("|/     \\|  \\/  \\)  \\)    |/     \\|  (/  \\/     \\/     |/     \\|", Fore.YELLOW)
-               ("         ╭───────────────────────── < ~ COUNTRY ~  > ─────────────────────────────────────╮", Fore.CYAN),
-        ("         │                         【•】 YOUR COUNTRY  ➤ MUMBAII                            │", Fore.CYAN),
-        ("         │                         【•】 YOUR REGION   ➤ MUMBAII                            │", Fore.CYAN),
-        ("         │                         【•】 YOUR CITY     ➤ MUMBAII                            │", Fore.CYAN),
-        ("         ╰────────────────────────────< ~ COUNTRY ~  >────────────────────────────────────╯", Fore.CYAN),
-        ("╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗", Fore.YELLOW),
-        ("║  NAME                 : MIISS-ALIIYA           GOD ABBUS                     RAKHNA              ║", Fore.CYAN),
-        ("║  RULLEX               : MUMBAII ON FIRE            KARNE PE                     SAB GOD             ║", Fore.GREEN),
-        ("║  FORM 🏠              : MUMBAII              APPEARED                     ABBUS BANA          ║", Fore.CYAN),
-        ("║  BRAND                : MULTI CONVO              HATA DIYA                    HAI BILKUL          ║", Fore.GREEN),
-        ("║  GitHub               : BROKEN NADEEM            JAAEGA YE                    KOI BHI HO          ║", Fore.CYAN),
-        ("║  WHATSAP              : +NO BHAWO          BAAT YWAD                   GOD ABBUS NO         ║", Fore.GREEN),
-        ("╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝", Fore.YELLOW), 
+        "_______   _________   _______    _______      _______    _         _________              _______",
+        "(       )  \\__   _/  (  ____ \\  (  ____ \\    (  ___  )  ( \\        \\_   __/  |\\     /|  (  ___  )",
+        "| () () |     ) (     | (    \\/  | (    \\/    | (   ) |  | (           ) (     ( \\   / )  | (   ) |",
+        "| || || |     | |     | (_____   | (_____     | () |  | |           | |      \\ () /   | (_) |",
+        "| |()| |     | |     (____  )  (_____  )    |  ___  |  | |           | |       \\   /    |  ___  |",
+        "| |   | |     | |           ) |        ) |    | (   ) |  | |           | |        ) (     | (   ) |",
+        "| )   ( |  __) (__  /\\) |  /\\) |    | )   ( |  | (/\\  __) (__     | |     | )   ( |",
+        "|/     \\|  \\/  \\)  \\)    |/     \\|  (/  \\/     \\/     |/     \\|",
+        "         ╭───────────────────────── < ~ COUNTRY ~  > ─────────────────────────────────────╮",
+        "         │                         【•】 YOUR COUNTRY  ➤ MUMBAII                            │",
+        "         │                         【•】 YOUR REGION   ➤ MUMBAII                            │",
+        "         │                         【•】 YOUR CITY     ➤ MUMBAII                            │",
+        "         ╰────────────────────────────< ~ COUNTRY ~  >────────────────────────────────────╯",
+        "╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗",
+        "║  NAME                 : MIISS-ALIIYA           GOD ABBUS                     RAKHNA              ║",
+        "║  RULLEX               : MUMBAII ON FIRE            KARNE PE                     SAB GOD             ║",
+        "║  FORM 🏠              : MUMBAII              APPEARED                     ABBUS BANA          ║",
+        "║  BRAND                : MULTI CONVO              HATA DIYA                    HAI BILKUL          ║",
+        "║  GitHub               : BROKEN NADEEM            JAAEGA YE                    KOI BHI HO          ║",
+        "║  WHATSAP              : +NO BHAWO          BAAT YWAD                   GOD ABBUS NO         ║",
+        "╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝",
     ]
 
-    for line, color in logo_lines:
-        typing_effect(line, 0.005, color)
+    for line in logo_lines:
+        typing_effect(line, 0.005, Fore.YELLOW)
 
     typing_effect("                       <<━━━━━━━━━━━━━━━━━⏮⚓PARDHAN-ALIIYA⚓⏭━━━━━━━━━━━━━━━━>>", 0.02, Fore.YELLOW)
     time.sleep(1)
@@ -137,7 +137,6 @@ def main():
     haters_name = animated_input("  【🖊】 ENTER HATER NAME➜")
     messages_file = animated_input("  【📝】 ENTER MESSAGE FILE➜")
 
-    # Speed input validation
     while True:
         try:
             speed = float(animated_input("  【⏰】 ENTER DELAY/TIME (in seconds) FOR MESSAGES ➜"))
